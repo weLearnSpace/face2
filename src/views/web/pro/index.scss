@@ -1,0 +1,15 @@
+.page-pro-1, .page-pro-2 {
+
+  .page-pro-item {
+    &-body, &-bg, &-light {
+    }
+
+    &-body, &-bg {
+      margin: 170px 0 0 285px;
+    }
+
+    &-light {
+      margin: 70px 0 0 210px;
+    }
+  }
+}
