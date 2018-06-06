@@ -46,10 +46,19 @@
 	opacity: 0;
 	transition: opacity 0.5s ease;
 	width: 100%;
-	top: 55px;
-	left: 100px;
+	top: 70px;
+	left: 0;
+	z-index: 9999;
 }
 
-.page-entered.pt-page-current .pt-page-title {
-  opacity: 1;
+.page-main {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.page-entered.pt-page-current, .page-stay.pt-page-current {
+	.pt-page-title,
+	.page-main {
+		opacity: 1;
+	}
 }

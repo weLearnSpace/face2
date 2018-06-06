@@ -6,7 +6,7 @@
       'page-entered': isPageEntered
     }"
   >
-    <div class="title-h1 pt-page-title">
+    <div class="title-h1 pt-page-title" style="left: 100px;">
       <img :src="require('./img/us_wenzi.png')" />
     </div>
     <div class="title-h1-content">

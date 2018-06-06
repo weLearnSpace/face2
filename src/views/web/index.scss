@@ -51,6 +51,62 @@
       transform: translateY(0);
     }
   }
+  &-current-41 {
+    .pros {
+      transform: translateY(-20px);
+    }
+  }
+  &-current-42 {
+    .pros {
+      transform: translateY(-40px);
+    }
+  }
+  &-current-43 {
+    .pros {
+      transform: translateY(-60px);
+    }
+  }
+  &-current-44 {
+    .pros {
+      transform: translateY(-80px);
+    }
+  }
+
+  &-current-5 {
+    .pros {
+      transform: translateY(-100px);
+    }
+  }
+
+  &-current-6 {
+    .pros {
+      transform: translateY(-120px);
+    }
+  }
+
+  &-current-61 {
+    .pros {
+      transform: translateY(-140px);
+    }
+  }
+
+  &-current-62 {
+    .pros {
+      transform: translateY(-160px);
+    }
+  }
+
+  &-current-7 {
+    .pros {
+      transform: translateY(-180px);
+    }
+  }
+
+  &-current-8 {
+    .pros {
+      transform: translateY(-200px);
+    }
+  }
 
   // 产品
   &-earth {
@@ -108,6 +164,72 @@
 
   &-us {
     // background: rgba($color: red, $alpha: .8);
+  }
+}
+
+.page-top__outer {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.page-top {
+  width: 1080px;
+  height: 75px;
+  margin: 0 auto;
+
+  &__logo {
+    float: left;
+    margin-top: 14px;
+  }
+
+  &__menus {
+    padding: 15px 0;
+    float: right;
+
+    &_item {
+      position: relative;
+      height: 35px;
+      line-height: 35px;
+      padding: 5px 0;
+      margin: 0 25px;
+      float: left;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    &_item.active {
+      color: #35c1f0;
+
+      &::after {
+        content: ' ';
+        width: 100%;
+        display: block;
+        height: 3px;
+        background: #35c1f0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .dropmenu {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+      transform: translateY(40px);
+    }
+
+    &_item {
+      &:hover {
+        .dropmenu {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
   }
 }
 
