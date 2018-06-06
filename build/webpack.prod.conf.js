@@ -65,7 +65,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       template: 'index-web.html',
       inject: true,
       // favicon: 'favicon.ico', // 站点图标
-      chunks: ['vendor', 'web-entry'],
+      // chunks: ['vendor', 'web-entry'],
       minify: {
         removeComments: true,
         collapseWhitespace: true,

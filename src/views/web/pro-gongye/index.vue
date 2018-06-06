@@ -187,10 +187,14 @@ export default class Pro extends Vue {
     this.active = num
 
     setTimeout(() => {
-      const $cont: any = document.querySelector('.pt-tab-active')
-      const $cur: any = $cont.querySelector('.page-pro-item-light')
-      $cur.removeEventListener('transitionend', () => this.toLeafing())
-      $cur.addEventListener('transitionend', () => this.toLeafing())
+      const $layer: any = document.querySelector('.pt-page-current')
+
+      if ($layer && this.visible) {
+        const $cont: any = document.querySelector('.pt-tab-active')
+        const $cur: any = $cont.querySelector('.page-pro-item-light')
+        $cur.removeEventListener('transitionend', () => this.toLeafing())
+        $cur.addEventListener('transitionend', () => this.toLeafing())
+      }
     }, 0)
   }
 

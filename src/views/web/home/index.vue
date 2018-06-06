@@ -30,19 +30,28 @@ import Particle from '@/components/particle'
   }
 })
 export default class Home extends Vue {
+  @Prop({ default: true }) loading: boolean
   @Prop({ default: false }) visible: boolean
   @Prop({ default: false }) isPageEntered: boolean
 
   logoVisible: boolean = false
   logoStart: boolean = false
+
   @Watch('isPageEntered')
   onChanged(entered) {
     if (entered) {
       this.logoVisible = true
 
-      setTimeout(() => {
-        this.logoStart = true
-      }, 1000)
+      // setTimeout(() => {
+      //   this.logoStart = true
+      // }, 1000)
+    }
+  }
+
+  @Watch('loading')
+  onLoadingChanged(val, old) {
+    if (val === false) {
+      this.logoStart = true
     }
   }
 

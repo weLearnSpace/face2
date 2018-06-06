@@ -81,6 +81,7 @@
             v-show="isHome"
             :visible="isHome"
             :isPageEntered="isHome && isPageEntered"
+            :loading="loading"
           />
 
           <page-us
@@ -176,7 +177,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from 'vue-property-decorator'
+import { Component, Vue, Watch, Prop } from 'vue-property-decorator'
 import PageHome from './home/index.vue'
 import PageUs from './us/index.vue'
 import PageServ from './serv/index.vue'
@@ -223,6 +224,8 @@ const down = {
   }
 })
 export default class App extends Vue {
+  @Prop() loading: boolean
+
   page: number = 0
   isPageEntered: boolean = false
 
