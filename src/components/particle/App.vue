@@ -247,7 +247,9 @@ export default class Particle extends Vue {
       dot.disperseInit()
     })
 
-    this.animate(dots)
+    this.animate(dots, () => {
+      this.$emit('disperse')
+    })
     //   }
     // )
   }
@@ -262,6 +264,7 @@ export default class Particle extends Vue {
 
     this.animate(dots, () => {
       this.animateEnd = true
+      this.$emit('recovery')
     })
   }
 

@@ -6,6 +6,10 @@
       'page-entered': isPageEntered
     }"
   >
+    <div class="title-h1 pt-page-title">
+      <img :src="require('../assets/img/title/title_lianxiwomen.png')" />
+    </div>
+  
     <div class="page-content page-contact-content">
       <div>
         <img :src="require('./img/pic_01.png')" />

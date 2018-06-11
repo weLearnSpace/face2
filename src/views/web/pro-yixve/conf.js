@@ -24,7 +24,7 @@ export default {
         style: 'margin-left: 70px;',
         body: { url: 'yixve/pic_zhinengtingzhenqi.png', style: 'margin: -40px 0 0 0' },
         bg: { url: 'yixve/bg_bglight_zhinengtingzhenqi.png', style: 'margin: -40px 0px 0px 1px' },
-        // light: { url: 'dianzi/bg_bglight_MIFI.png' }
+        light: { url: 'yixve/bg_light_zhinengtingzhenqi.png', style: 'margin: 258px 0 0 99px' }
       }
     },
     // --- part ---
@@ -37,7 +37,7 @@ export default {
         // style: 'margin-left: -80px;',
         body: { url: 'yixve/pic_zhinengwenduji.png', style: 'margin: 12px 0px 0px -40px' },
         bg: { url: 'yixve/bg_bglight_zhinengwenduji.png', style: 'margin: -14px 0px 0px -65px' },
-        // light: { url: 'dianzi/che_guang.png', style: 'margin: 0 0 0 146px' }
+        light: { url: 'yixve/bg_light_zhinengwenduji.png', style: 'margin: 20px 0px 0px 35px' }
       }
     },
     // --- part ---

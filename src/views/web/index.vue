@@ -13,30 +13,22 @@
         <div class="page-top__menus">
           <div class="page-top__menus_item" :class="{'active': page === 2}" @click="handleSwitch(2)">关于我们</div>
           <div class="page-top__menus_item" :class="{'active': page === 3}" @click="handleSwitch(3)">服务范围</div>
+          <div class="page-top__menus_item" :class="{'active': page === 4}" @click="handleSwitch(4)">覆盖领域</div>
           <div class="page-top__menus_item"
-            :class="{'active': page === 4 || page === 41 || page === 42 || page === 43}"
+            :class="{'active': page === 5 || page === 5.1 || page === 5.2 || page === 5.2}"
           >
             <span>产品展示</span>
             <div class="dropmenu">
-              <div class="dropmenu__item" @click="handleSwitch(4)">车载智能终端</div>
-              <div class="dropmenu__item" @click="handleSwitch(41)">消费类电子</div>
-              <div class="dropmenu__item" @click="handleSwitch(42)">智能家具</div>
-              <div class="dropmenu__item" @click="handleSwitch(43)">智能医学</div>
-              <div class="dropmenu__item" @click="handleSwitch(44)">智能工业</div>
+              <div class="dropmenu__item" @click="handleSwitch(5)">车载智能终端</div>
+              <div class="dropmenu__item" @click="handleSwitch(5.1)">消费类电子</div>
+              <div class="dropmenu__item" @click="handleSwitch(5.2)">智能家具</div>
+              <div class="dropmenu__item" @click="handleSwitch(5.3)">智能医学</div>
+              <div class="dropmenu__item" @click="handleSwitch(5.4)">智能工业</div>
             </div>
           </div>
-          <div class="page-top__menus_item" :class="{'active': page === 5}" @click="handleSwitch(5)">覆盖领域</div>
-          <div
-            class="page-top__menus_item"
-            :class="{'active': page === 6 || page === 61 || page === 62}"
-          >
-            <span>特色展示</span>
-            <div class="dropmenu" style="height: 130px !important;">
-              <div class="dropmenu__item" @click="handleSwitch(6)">平台优势</div>
-              <div class="dropmenu__item" @click="handleSwitch(61)">平台架构</div>
-              <div class="dropmenu__item" @click="handleSwitch(62)">服务应用架构</div>
-            </div>
-          </div>
+          <div class="page-top__menus_item" :class="{'active': page === 6}" @click="handleSwitch(6)">平台优势</div>
+          <div class="page-top__menus_item" :class="{'active': page === 6.1}" @click="handleSwitch(6.1)">平台架构</div>
+          <div class="page-top__menus_item" :class="{'active': page === 6.2}" @click="handleSwitch(6.2)">服务应用架构</div>
           <div class="page-top__menus_item" :class="{'active': page === 7}" @click="handleSwitch(7)">合作伙伴</div>
           <div class="page-top__menus_item" :class="{'active': page === 8}" @click="handleSwitch(8)">联系我们</div>
         </div>
@@ -44,7 +36,7 @@
     </div>
     <div
       class="bg"
-      :class="[`bg-current-${page}`, {
+      :class="[curPageClass, {
         'bg-pros': isProBg,
         'bg-earth': isEarthBg,
       }]"
@@ -202,8 +194,12 @@ const up = {
 }
 const down = {
   enter: 'pt-page-moveFromTop',
-  leave: 'pt-page-moveToBottomEasing pt-page-ontop',
+  leave: 'pt-page-moveToBottomEasing pt-page-ontop'
 }
+
+const pages = [
+  1, 2, 3, 4, 5, 5.1, 5.2, 5.3, 5.4, 6, 6.1, 6.2, 7, 8
+]
 
 @Component({
   components: {
@@ -220,7 +216,7 @@ const down = {
     PageProGy,
     Ptys,
     Ptjg,
-    Fwyy,
+    Fwyy
   }
 })
 export default class App extends Vue {
@@ -234,7 +230,6 @@ export default class App extends Vue {
 
   @Watch('page')
   onPageChanged(cur, old) {
-    console.log(cur, old)
     // 往后面滚动
     if (cur >= old) {
       // 从下往上入场
@@ -246,6 +241,21 @@ export default class App extends Vue {
       this.pageEnterAnimate = down.enter
       this.pageLeaveAnimate = down.leave
     }
+
+    const i = pages.findIndex((k) => k === cur)
+    this.index = i
+  }
+
+  @Watch('loading')
+  onLoadingChanged(val) {
+    if (!val) {
+      this.scrollpage()
+    }
+  }
+
+  get curPageClass() {
+    const p = this.page.toString().replace('.', '--')
+    return `bg-current-${p}`
   }
 
   get isProBg() {
@@ -254,7 +264,7 @@ export default class App extends Vue {
   }
 
   get isEarthBg() {
-    return this.isHome || this.isUs || this.isServ
+    return this.isHome || this.isUs || this.isServ || this.isRange
   }
 
   get isHome() {
@@ -266,23 +276,23 @@ export default class App extends Vue {
   get isServ() {
     return this.page === 3
   }
-  get isPro() {
+  get isRange() {
     return this.page === 4
   }
+  get isPro() {
+    return this.page === 5
+  }
   get isProDZ() {
-    return this.page === 41
+    return this.page === 5.1
   }
   get isProJJ() {
-    return this.page === 42
+    return this.page === 5.2
   }
   get isProYX() {
-    return this.page === 43
+    return this.page === 5.3
   }
   get isProGY() {
-    return this.page === 44
-  }
-  get isRange() {
-    return this.page === 5
+    return this.page === 5.4
   }
   get isPartner() {
     return this.page === 7
@@ -294,10 +304,10 @@ export default class App extends Vue {
     return this.page === 6
   }
   get isPtjg() {
-    return this.page === 61
+    return this.page === 6.1
   }
   get isFwyy() {
-    return this.page === 62
+    return this.page === 6.2
   }
 
   handleSwitch(currentPage) {
@@ -312,6 +322,64 @@ export default class App extends Vue {
     this.isPageEntered = true
   }
 
+  index: number = 0
+  scrollpage() {
+    const self = this
+    function scroll2top(self) {
+      if (self.isPageEntered) {
+      if (self.index > 0) {
+        self.index = self.index - 1
+      }
+
+      self.page = pages[self.index]
+      }
+    }
+    function scroll2bottom(self) {
+      if (self.isPageEntered) {
+      if (self.index < pages.length - 1) {
+        self.index = self.index + 1
+      }
+      self.page = pages[self.index]
+      }
+    }
+
+    var scrollFunc = function(e) {
+      e = e || window.event
+      if (e.wheelDelta) {
+        //第一步：先判断浏览器IE，谷歌滑轮事件
+        if (e.wheelDelta > 0) {
+          //当滑轮向上滚动时
+          scroll2top(self)
+        }
+        if (e.wheelDelta < 0) {
+          //当滑轮向下滚动时
+          scroll2bottom(self)
+        }
+      } else if (e.detail) {
+        //Firefox滑轮事件
+        if (e.detail > 0) {
+          //当滑轮向上滚动时
+          scroll2top(self)
+        }
+        if (e.detail < 0) {
+          //当滑轮向下滚动时
+          scroll2bottom(self)
+        }
+      }
+    }
+
+    //给页面绑定滑轮滚动事件
+    // if (document.addEventListener) {
+    //   //firefox
+    //   document.addEventListener('DOMMouseScroll', scrollFunc, false)
+    // } else {
+    //   //滚动滑轮触发scrollFunc方法  //ie 谷歌
+    //   window.onmousewheel = document.onmousewheel = scrollFunc
+    // }
+
+    document.addEventListener('mousewheel', scrollFunc, false)
+  }
+
   mounted() {
     this.page = 1
   }
@@ -324,13 +392,13 @@ export default class App extends Vue {
 
 .dropmenu {
   position: absolute !important;
-  width: 130px;
-	height: 210px !important;
-	background-color: rgba(18, 72, 146, 0.2);
-	border-radius: 2px;
+  width: 110px;
+  height: 210px !important;
+  background-color: rgba(18, 72, 146, 0.2);
+  border-radius: 2px;
   border: solid 1px rgba(0, 198, 255, 0.2);
   padding: 50px 0 0 0;
-  margin: -40px 0 0 -40px;
+  margin: -40px 0 0 -28px;
 
   &__item {
     text-align: center;

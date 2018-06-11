@@ -7,7 +7,7 @@
     }"
   >
     <div class="title-h1 pt-page-title">
-      <img :src="require('./img/title.png')" />
+      <img :src="require('../assets/img/title/title_fugailingyu.png')" />
     </div>
     
     <div class="page-main">
@@ -49,6 +49,7 @@ $house-ani: cubic-bezier(.22, .61, .36, 1);
 
 .page-range__outer {
   position: relative;
+  margin: -30px 0 0 0;
 }
 .page-range-ani {
   position: absolute;
@@ -59,6 +60,7 @@ $house-ani: cubic-bezier(.22, .61, .36, 1);
   &__1 {
     left: 320px;
     top: 170px;
+    margin: 0 0 0 50px;
   }
   &__2 {
     left: 50px;

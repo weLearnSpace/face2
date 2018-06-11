@@ -36,7 +36,7 @@ export default {
       item: {
         // style: 'margin-left: -80px;',
         body: { url: 'chezai/chanpin-che.png', style: 'margin: -50px 0 0 0' },
-        // bg: { url: 'chezai/pro1-guang.png' },
+        // bg: { url: 'chezai/bg_light_ETC.png' },
         light: { url: 'chezai/che_guang.png', style: 'margin: 0 0 0 146px' }
       }
     },
@@ -50,7 +50,7 @@ export default {
         // style: 'margin-left: -80px;',
         body: { url: 'chezai/etc-pic.png', style: 'margin: 240px 0 0 280px' },
         bg: { url: 'chezai/etc-bg_faguang.png', style: 'margin: 210px 0px 0px 250px' },
-        light: { url: 'chezai/etc-light.png', style: 'margin: 0 0 0 0' }
+        light: { url: 'chezai/bg_light_ETC.png', style: 'margin: 85px 0 0 209px' }
       }
     },
   ]

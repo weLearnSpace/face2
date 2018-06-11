@@ -24,7 +24,7 @@ export default {
         style: 'margin-left: 70px;',
         body: { url: 'dianzi/pic_MIFI.png', },
         bg: { url: 'dianzi/bg_bglight_MIFI.png', style: 'margin: -22px 0 0 -32px' },
-        // light: { url: 'dianzi/bg_bglight_MIFI.png' }
+        light: { url: 'dianzi/bg_light_MIFI.png', style: 'margin: 19px 0 0 -80px' }
       }
     },
     // --- part ---

@@ -7,7 +7,7 @@
     }"
   >
     <div class="title-h1 pt-page-title">
-      <img :src="require('../pro/img/gongye/title.png')" />
+      <img :src="require('../assets/img/title/title_zhinenggongye.png')" />
     </div>
 
     <ItemsTab
@@ -38,7 +38,7 @@
             <img :src="require('../pro/img/gongye/pic_chenjiangjiance.png')" />
           </div>
           <div class="page-pro-item" style="margin-left: -80px;">
-            <div class="cj-points">
+            <div class="cj-points page-pro-item-bg">
               <div class="cj-point cj-point__1">
                 <img :src="require('../pro/img/gongye/bg_light_01.png')" />
               </div>
@@ -94,12 +94,12 @@
             <div class="pt-leafing-item page-pro-item-body">
               <img :src="require('../pro/img/gongye/pic_zhinengkuaidigui.png')" style="margin: 160px 0 0 200px" />
             </div>
-            <!-- <div class="pt-leafing-item page-pro-item-bg">
-              <img :src="require('../pro/img/gongye/bg_light_zhinengkuaidigui.png')" />
-            </div> -->
-            <!-- <div class="pt-leafing-item-light page-pro-item-light">
-              <img :src="require('../pro/img/gongye/bg_light_zhinengkuaidigui.png')" />
-            </div> -->
+            <div class="pt-leafing-item page-pro-item-bg">
+              <img :src="require('../pro/img/gongye/bg_miaobian.png')" style="margin: 158px 0 0 198px" />
+            </div>
+            <div class="pt-leafing-item-light page-pro-item-light">
+              <img class="point-light" :src="require('../pro/img/gongye/bg_light_zhinengkuaidigui.png')" style="margin: 167px 0 0 389px" />
+            </div>
           </div>
         </div>
       </transition-group>
@@ -139,7 +139,7 @@ export default class Pro extends Vue {
   menu: any = [
     {
       def: 'gongye/btn_dizhichenjiang_nor.png',
-      act: 'gongye/btn_chenjiangjiance_sel.png'
+      act: 'gongye/btn_dizhichenjiang_sel.png'
     },
     {
       def: 'gongye/btn_wajueji_nor.png',
@@ -216,6 +216,50 @@ export default class Pro extends Vue {
 
 <style lang="scss">
 $in-ani: cubic-bezier(.22, .61, .36, 1);
+
+
+@keyframes point-light {
+  0% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.cj-point {
+  display: inline-block;
+  position: absolute;
+
+  &__1 {
+    left: 347px;
+    top: 148px;
+    animation: point-light 1.6s infinite 1.2s;
+  }
+
+  &__2 {
+    top: 171px;
+    animation: point-light 1.8s infinite .2s;
+  }
+
+  &__3 {
+    left: 209px;
+    top: 104px;
+    animation: point-light 2s infinite 0.6s;
+  }
+
+  &__4 {
+    left: 51px;
+    top: 89px;
+    animation: point-light 1.7s infinite .2s;
+  }
+}
+
+.point-light {
+  animation: point-light 1.8s infinite .2s;
+}
 
 .page-pro-main {
   position: absolute;
@@ -312,43 +356,45 @@ $in-ani: cubic-bezier(.22, .61, .36, 1);
   }
 }
 
+.page-pro-3 {
 
-
-@keyframes leafing {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(12px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }
 
-@keyframes leafing-light {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.6;
-    transform: translateY(12px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+// @keyframes leafing {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(12px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//   }
+// }
 
-$leafing-ani: cubic-bezier(.65,.05,.36,1);
+// @keyframes leafing-light {
+//   0% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+//   50% {
+//     opacity: 0.6;
+//     transform: translateY(12px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0px);
+//   }
+// }
 
-.pt-leafing {
-  .pt-leafing-item {
-    animation: leafing 4s $leafing-ani infinite;
-  }
-  .pt-leafing-item-light {
-    animation: leafing-light 4s $leafing-ani infinite;
-  }
-}
+// $leafing-ani: cubic-bezier(.65,.05,.36,1);
+
+// .pt-leafing {
+//   .pt-leafing-item {
+//     animation: leafing 4s $leafing-ani infinite;
+//   }
+//   .pt-leafing-item-light {
+//     animation: leafing-light 4s $leafing-ani infinite;
+//   }
+// }
 </style>

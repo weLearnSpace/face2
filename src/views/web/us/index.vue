@@ -6,8 +6,8 @@
       'page-entered': isPageEntered
     }"
   >
-    <div class="title-h1 pt-page-title" style="left: 100px;">
-      <img :src="require('./img/us_wenzi.png')" />
+    <div class="title-h1 pt-page-title">
+      <img :src="require('../assets/img/title/title_guanyuwomen.png')" />
     </div>
     <div class="title-h1-content">
       <p>深圳市壹云智能科技有限公司，由一群来自通信、物联网、互联网行业，都心怀万物互联的美好愿望，而汇聚在一起的年轻人。大家在一起以后碰撞出了“万物归一，云控天下”的豪言壮志，于2016年7月，位于中国深圳市南山区波顿科技园，成立公司。公司致力于通讯模块以及智能终端方案设计、研发、生产、销售；为客户提供针对性定行业化云服务管理后台；对于用户的互联网运营，帮助传统行业互联万+转型三个核心发展方向。公司秉承"汇聚人才，技术领先，质量稳定，客户第一"的经营理念。</p>

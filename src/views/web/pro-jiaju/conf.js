@@ -24,7 +24,7 @@ export default {
         style: 'margin-left: 70px;',
         body: { url: 'jiaju/pic_zhinenghatou.png', },
         bg: { url: 'jiaju/bg_bglight_zhinengchatou.png', style: 'margin: -83px 0px 0px -81px' },
-        // light: { url: 'dianzi/bg_bglight_MIFI.png' }
+        light: { url: 'jiaju/bg_light_zhinengchatou.png', style: 'margin: -46px 0 0 -93px' }
       }
     },
     // --- part ---
@@ -37,7 +37,7 @@ export default {
         // style: 'margin-left: -80px;',
         body: { url: 'jiaju/pic_zhinengjiaju.png', style: 'margin: 42px 0 0 0' },
         bg: { url: 'jiaju/bg_bglight_zhinengjiaju.png', style: 'margin: -39px 0px 0px -81px' },
-        // light: { url: 'dianzi/che_guang.png', style: 'margin: 0 0 0 146px' }
+        light: { url: 'jiaju/bg_light_zhinengjiaju.png', style: 'margin: 0 0 0 146px' }
       }
     },
     // --- part ---
@@ -50,7 +50,7 @@ export default {
         // style: 'margin-left: -80px;',
         body: { url: 'jiaju/pic_zhinengmensuo.png', style: 'margin: 160px 0px 0px 350px' },
         bg: { url: 'jiaju/bg_bglight_zhinengmensuo.png', style: 'margin: 145px 0px 0px 331px' },
-        // light: { url: 'dianzi/etc-light.png', style: 'margin: 0 0 0 0' }
+        light: { url: 'jiaju/bg_light_zhinengmensuo.png', style: 'margin: 63px 0px 0px 306px' }
       }
     },
   ]

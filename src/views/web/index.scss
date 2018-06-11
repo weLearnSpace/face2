@@ -47,34 +47,34 @@
   }
 
   &-current-4 {
-    .pros {
-      transform: translateY(0);
-    }
-  }
-  &-current-41 {
-    .pros {
-      transform: translateY(-20px);
-    }
-  }
-  &-current-42 {
-    .pros {
-      transform: translateY(-40px);
-    }
-  }
-  &-current-43 {
-    .pros {
-      transform: translateY(-60px);
-    }
-  }
-  &-current-44 {
-    .pros {
-      transform: translateY(-80px);
+    .earth {
+      transform: translateY(-200px);
     }
   }
 
   &-current-5 {
     .pros {
-      transform: translateY(-100px);
+      transform: translateY(0);
+    }
+  }
+  &-current-5--1 {
+    .pros {
+      transform: translateY(-20px);
+    }
+  }
+  &-current-5--2 {
+    .pros {
+      transform: translateY(-40px);
+    }
+  }
+  &-current-5--3 {
+    .pros {
+      transform: translateY(-60px);
+    }
+  }
+  &-current-5--4 {
+    .pros {
+      transform: translateY(-80px);
     }
   }
 
@@ -84,13 +84,13 @@
     }
   }
 
-  &-current-61 {
+  &-current-6--1 {
     .pros {
       transform: translateY(-140px);
     }
   }
 
-  &-current-62 {
+  &-current-6--2 {
     .pros {
       transform: translateY(-160px);
     }
@@ -193,7 +193,7 @@
       height: 35px;
       line-height: 35px;
       padding: 5px 0;
-      margin: 0 25px;
+      margin: 0 15px;
       float: left;
       font-size: 14px;
       cursor: pointer;

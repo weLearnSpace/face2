@@ -6,7 +6,7 @@
     :content="content"
   >
     <template slot="title">
-      <img :src="require('./img/chezai/biaoti_houshijing.png')" />
+      <img :src="require('../assets/img/title/title_chezaizhinengzhongduan.png')" />
     </template>
   </PropComp>
 </template>

@@ -15,7 +15,11 @@
         :height="392"
         :canvasWidth="1200"
         :canvasHeight="800"
-      />   
+        @recovery="onRecovery"
+      />
+      <img class="logo-light" :class="{
+        'logo-light-visible': aniEnd
+      }" :src="require('./img/light.png')" />
     </div>
   </div>
 </template>
@@ -36,6 +40,7 @@ export default class Home extends Vue {
 
   logoVisible: boolean = false
   logoStart: boolean = false
+  aniEnd: boolean = false
 
   @Watch('isPageEntered')
   onChanged(entered) {
@@ -53,6 +58,10 @@ export default class Home extends Vue {
     if (val === false) {
       this.logoStart = true
     }
+  }
+
+  onRecovery() {
+    this.aniEnd = true
   }
 
   mounted() {
@@ -78,6 +87,18 @@ $h: 800px;
   .particle-img {
     margin-top: ($h - 392px) / 2;
     margin-left: ($w - 428px) / 2;
+  }
+}
+
+.logo-light {
+  position: absolute;
+  top: 306px;
+  left: 386px;
+  opacity: 0;
+
+  &-visible {
+    opacity: 1;
+    transition: all 0.5s ease;
   }
 }
 </style>

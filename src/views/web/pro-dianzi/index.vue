@@ -7,7 +7,7 @@
     :ani="ani"
   >
     <template slot="title">
-      <img :src="require('../pro/img/dianzi/title.png')" />
+      <img :src="require('../assets/img/title/title_xiaofeidianzi.png')" />
     </template>
   </PropComp>
 </template>

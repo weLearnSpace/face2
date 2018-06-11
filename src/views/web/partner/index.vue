@@ -7,7 +7,7 @@
     }"
   >
     <div class="title-h1 pt-page-title">
-      <img :src="require('./img/title.png')" />
+      <img :src="require('../assets/img/title/title_hezuohuoban.png')" />
     </div>
 
     <div class="page-main">
