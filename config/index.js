@@ -50,14 +50,14 @@ const test = Object.assign({}, dev, {
 const build = {
   // Template for index.html
   index: {
-    web: path.resolve(__dirname, '../dist/web/index.html'),
+    web: path.resolve(__dirname, '../dist/index-web.html'),
     mobile: path.resolve(__dirname, '../dist/mobile/index.html'),
   },
 
   // Paths
   assetsRoot: path.resolve(__dirname, '../dist'),
   assetsSubDirectory: 'static',
-  assetsPublicPath: '../',
+  assetsPublicPath: '/',
 
   /**
    * Source Maps

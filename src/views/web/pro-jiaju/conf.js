@@ -37,7 +37,7 @@ export default {
         // style: 'margin-left: -80px;',
         body: { url: 'jiaju/pic_zhinengjiaju.png', style: 'margin: 42px 0 0 0' },
         bg: { url: 'jiaju/bg_bglight_zhinengjiaju.png', style: 'margin: -39px 0px 0px -81px' },
-        light: { url: 'jiaju/bg_light_zhinengjiaju.png', style: 'margin: 0 0 0 146px' }
+        light: { url: 'jiaju/bg_light_zhinengjiaju.png', style: 'margin: 52px 0px 0px -75px' }
       }
     },
     // --- part ---

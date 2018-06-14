@@ -2,7 +2,7 @@
   <div id="app">
     <transition name="fade-out">
       <div class="page-loading" v-show="loading">
-        <div>loading...</div>
+        <div><img :src="require('./assets/img/loading.gif')" width="80" /></div>
       </div>
     </transition>
     <transition name="fade-in">
@@ -21,7 +21,7 @@ export default class App extends Vue {
   mounted() {
     setTimeout(() => {
       this.loading = false
-    }, 1000)
+    }, 1500)
   }
 }
 </script>

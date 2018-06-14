@@ -77,12 +77,14 @@ export default class Serv extends Vue {
     &-title {
       text-align: center;
       margin: 0 0 60px 0;
+      font-size: 22px;
     }
 
     &-list {
       p {
-        margin: 0 0 10px 0;
+        margin: 0 0 10px 20px;
         vertical-align: middle;
+        font-size: 16px;
 
         &::before {
           display: inline-block;

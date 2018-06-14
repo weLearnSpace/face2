@@ -10,7 +10,8 @@
     "lint": "eslint --ext .js,.vue src",
     "prelint": "node ./tool/hooks/pre-commit.js",
     "build": "node ./build/build.js --watch",
-    "mock": "json-server --port 9999 --watch ./mock/db.json"
+    "mock": "json-server --port 9999 --watch ./mock/db.json",
+    "pkg-server": "node ./tool/server.js"
   },
   "pre-commit": [
     "prelint"

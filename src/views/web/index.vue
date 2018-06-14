@@ -15,7 +15,7 @@
           <div class="page-top__menus_item" :class="{'active': page === 3}" @click="handleSwitch(3)">服务范围</div>
           <div class="page-top__menus_item" :class="{'active': page === 4}" @click="handleSwitch(4)">覆盖领域</div>
           <div class="page-top__menus_item"
-            :class="{'active': page === 5 || page === 5.1 || page === 5.2 || page === 5.2}"
+            :class="{'active': page === 5 || page === 5.1 || page === 5.2 || page === 5.3 || page === 5.4}"
           >
             <span>产品展示</span>
             <div class="dropmenu">
@@ -334,6 +334,7 @@ export default class App extends Vue {
       self.page = pages[self.index]
       }
     }
+
     function scroll2bottom(self) {
       if (self.isPageEntered) {
       if (self.index < pages.length - 1) {
@@ -343,29 +344,33 @@ export default class App extends Vue {
       }
     }
 
+    let timer = null;
     var scrollFunc = function(e) {
       e = e || window.event
-      if (e.wheelDelta) {
-        //第一步：先判断浏览器IE，谷歌滑轮事件
-        if (e.wheelDelta > 0) {
-          //当滑轮向上滚动时
-          scroll2top(self)
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (e.wheelDelta) {
+          //第一步：先判断浏览器IE，谷歌滑轮事件
+          if (e.wheelDelta > 0) {
+            //当滑轮向上滚动时
+            scroll2top(self)
+          }
+          if (e.wheelDelta < 0) {
+            //当滑轮向下滚动时
+            scroll2bottom(self)
+          }
+        } else if (e.detail) {
+          //Firefox滑轮事件
+          if (e.detail > 0) {
+            //当滑轮向上滚动时
+            scroll2top(self)
+          }
+          if (e.detail < 0) {
+            //当滑轮向下滚动时
+            scroll2bottom(self)
+          }
         }
-        if (e.wheelDelta < 0) {
-          //当滑轮向下滚动时
-          scroll2bottom(self)
-        }
-      } else if (e.detail) {
-        //Firefox滑轮事件
-        if (e.detail > 0) {
-          //当滑轮向上滚动时
-          scroll2top(self)
-        }
-        if (e.detail < 0) {
-          //当滑轮向下滚动时
-          scroll2bottom(self)
-        }
-      }
+      }, 27)
     }
 
     //给页面绑定滑轮滚动事件
