@@ -29,7 +29,7 @@
           <div class="page-top__menus_item" :class="{'active': page === 6}" @click="handleSwitch(6)">平台优势</div>
           <div class="page-top__menus_item" :class="{'active': page === 6.1}" @click="handleSwitch(6.1)">平台架构</div>
           <div class="page-top__menus_item" :class="{'active': page === 6.2}" @click="handleSwitch(6.2)">服务应用架构</div>
-          <div class="page-top__menus_item" :class="{'active': page === 7}" @click="handleSwitch(7)">合作伙伴</div>
+          <!-- <div class="page-top__menus_item" :class="{'active': page === 7}" @click="handleSwitch(7)">合作伙伴</div> -->
           <div class="page-top__menus_item" :class="{'active': page === 8}" @click="handleSwitch(8)">联系我们</div>
         </div>
       </div>

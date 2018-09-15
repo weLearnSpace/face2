@@ -13,9 +13,6 @@
     "mock": "json-server --port 9999 --watch ./mock/db.json",
     "pkg-server": "node ./tool/server.js"
   },
-  "pre-commit": [
-    "prelint"
-  ],
   "dependencies": {
     "axios": "^0.18.0",
     "nprogress": "^0.2.0",

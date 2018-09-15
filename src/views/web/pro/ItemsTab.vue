@@ -1,5 +1,5 @@
 <template>
-  <div class="page-pro-menus">
+  <div :class="`page-pro-menus page-pro-menus--${items.length}`">
     <div
       v-for="(item, index) in items"
       :key="index"
@@ -42,10 +42,14 @@ $in-ani: cubic-bezier(.22, .61, .36, 1);
 .page-pro-menus {
   position: absolute;
   left: 136px;
-  height: 264px;
+  // height: 264px;
   top: 50%;
   margin-top: -132px;
   z-index: 99999;
+
+  &--4 {
+    margin-top: -170px;
+  }
 
   .page-pro-menu {
     width: 284px;
@@ -85,6 +89,11 @@ $in-ani: cubic-bezier(.22, .61, .36, 1);
     opacity: 1;
     transform: translateY(0);
     transition: all 0.8s $in-ani 0.2s;
+  }
+  .page-pro-menu-4 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.7s $in-ani 0.3s;
   }
 }
 </style>

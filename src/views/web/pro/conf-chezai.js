@@ -11,7 +11,11 @@ export default {
     {
       def: 'chezai/btn_ETC_nor.png',
       act: 'chezai/btn_ETC_sel.png'
-    }
+    },
+    {
+      def: 'chezai/btn_zhongkong_nor.png',
+      act: 'chezai/btn_zhongkong_sel.png'
+    },
   ],
   content: [
     // --- part ---
@@ -48,9 +52,20 @@ export default {
       },
       item: {
         // style: 'margin-left: -80px;',
-        body: { url: 'chezai/etc-pic.png', style: 'margin: 240px 0 0 280px' },
-        bg: { url: 'chezai/etc-bg_faguang.png', style: 'margin: 210px 0px 0px 250px' },
-        light: { url: 'chezai/bg_light_ETC.png', style: 'margin: 85px 0 0 209px' }
+        body: { url: 'chezai/pic_ETC.png', style: 'margin: 90px 0px 0px 280px' },
+        // bg: { url: 'chezai/etc-bg_faguang.png', style: 'margin: 210px 0px 0px 250px' },
+        light: { url: 'chezai/bg_light_ETC1.png', style: 'margin: 85px 0 0 209px' }
+      }
+    },
+    // --- part ---
+    {
+      bg: {
+        url: 'chezai/etc-bg.png',
+        style: 'margin: 30px 0 0 20px'
+      },
+      item: {
+        // style: 'margin-left: -80px;',
+        body: { url: 'chezai/pic_zhongkong.png', style: 'margin: 50px' },
       }
     },
   ]
