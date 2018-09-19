@@ -12,13 +12,10 @@
   
     <div class="page-content page-contact-content">
       <div>
-        <img :src="require('./img/pic_01.png')" />
+        <img :src="require('./img/pic_adress.png')" />
       </div>
       <div>
-        <img :src="require('./img/pic_02.png')" />
-      </div>
-      <div>
-        <img :src="require('./img/pic_03.png')" />
+        <img :src="require('./img/pic_erweima.png')" />
       </div>
     </div>
   </div>
@@ -40,7 +37,7 @@ export default class Us extends Vue {
   margin-top: 350px;
 
   div {
-    width: 33.33%;
+    width: 50%;
     text-align: center;
   }
 }
