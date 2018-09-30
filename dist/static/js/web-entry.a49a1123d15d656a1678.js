@@ -720,17 +720,17 @@ var us_Us = function (_super) {
     return Us;
 }(vue_property_decorator["c" /* Vue */]);
 /* harmony default export */ var us = (us_Us);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-561a7e32","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/views/web/us/index.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-694868aa","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/views/web/us/index.vue
 var us_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pt-page page-us",class:{
     'pt-page-current': _vm.visible,
     'page-entered': _vm.isPageEntered
   }},[_c('div',{staticClass:"title-h1 pt-page-title"},[_c('img',{attrs:{"src":__webpack_require__("hXXL")}})]),_vm._v(" "),_vm._m(0),_vm._v(" "),_vm._m(1)])}
-var us_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"title-h1-content"},[_c('p',[_vm._v("深圳市壹网智联科技有限公司，由一群来自通信、物联网、互联网行业，都心怀万物互联的美好愿望，而汇聚在一起的年轻人。大家碰撞出了“智联万物，合创未来”的豪言壮志，于2018年7月，位于中国深圳市南山区波顿科技园，成立公司。公司致力于物联网通讯模版以及整体解决方案设计，研发，生产与销售，为客户提供定制化云服务管理后台；对于用户的互联网运营，帮助传统行业实现物联网+智能转型升级；公司秉承“客户第一，质量稳定，技术领先，人才汇聚”的经营理念。")]),_vm._v(" "),_c('p',[_vm._v("公司汇聚移动通讯，互联网+，物联网三个领域行业精英与技术专家，组成了拥有丰富实战经验的研发团队。用户体验至上理念的技术开发团队。并且打造出了千万级用户，大接入高并发快速响应的服务平台。并且带来了传统消费来电子产品全国各省传统销售渠道以及上下游供应链资源。对于用户价值的挖掘也有自己深刻的理解。公司全体一致贯彻公司的经营理念及做事原则，从市场调研到售后服务过程中的每一个环节，快速响应客户的要求，提供客户满意的产品，极力协助客户商业的成功。公司成立以来先后在智慧交通，智慧家庭，智慧医疗，智慧工业等领域做出了成绩，树立了良好的行业口碑。")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"house-outer"},[_c('div',{staticClass:"house-light"}),_vm._v(" "),_c('div',{staticClass:"house-inner"},[_c('div',{staticClass:"house house__2"}),_vm._v(" "),_c('div',{staticClass:"house house__4"}),_vm._v(" "),_c('div',{staticClass:"house house__1"}),_vm._v(" "),_c('div',{staticClass:"house house__3"}),_vm._v(" "),_c('div',{staticClass:"house house__5"})])])}]
+var us_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"title-h1-content"},[_c('p',{staticClass:"text-indent"},[_vm._v("深圳市壹网智联科技有限公司，由一群来自通信、物联网、互联网行业，都心怀万物互联的美好愿望，而汇聚在一起的年轻人。大家碰撞出了“智联万物，合创未来”的豪言壮志，于2018年7月，位于中国深圳市南山区波顿科技园，成立公司。公司致力于物联网通讯模版以及整体解决方案设计，研发，生产与销售，为客户提供定制化云服务管理后台；对于用户的互联网运营，帮助传统行业实现物联网+智能转型升级；公司秉承“客户第一，质量稳定，技术领先，人才汇聚”的经营理念。")]),_vm._v(" "),_c('p',{staticClass:"text-indent"},[_vm._v("公司汇聚移动通讯，互联网+，物联网三个领域行业精英与技术专家，组成了拥有丰富实战经验的研发团队。用户体验至上理念的技术开发团队。并且打造出了千万级用户，大接入高并发快速响应的服务平台。并且带来了传统消费来电子产品全国各省传统销售渠道以及上下游供应链资源。对于用户价值的挖掘也有自己深刻的理解。公司全体一致贯彻公司的经营理念及做事原则，从市场调研到售后服务过程中的每一个环节，快速响应客户的要求，提供客户满意的产品，极力协助客户商业的成功。公司成立以来先后在智慧交通，智慧家庭，智慧医疗，智慧工业等领域做出了成绩，树立了良好的行业口碑。")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"house-outer"},[_c('div',{staticClass:"house-light"}),_vm._v(" "),_c('div',{staticClass:"house-inner"},[_c('div',{staticClass:"house house__2"}),_vm._v(" "),_c('div',{staticClass:"house house__4"}),_vm._v(" "),_c('div',{staticClass:"house house__1"}),_vm._v(" "),_c('div',{staticClass:"house house__3"}),_vm._v(" "),_c('div',{staticClass:"house house__5"})])])}]
 var us_esExports = { render: us_render, staticRenderFns: us_staticRenderFns }
 /* harmony default export */ var web_us = (us_esExports);
 // CONCATENATED MODULE: ./src/views/web/us/index.vue
 function us_injectStyle (ssrContext) {
-  __webpack_require__("BOdl")
+  __webpack_require__("McI6")
 }
 var us_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -2952,13 +2952,6 @@ module.exports = __webpack_require__.p + "static/img/bg_zhinengwenduji.1aba734.p
 
 /***/ }),
 
-/***/ "BOdl":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "CInz":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3159,6 +3152,13 @@ module.exports = __webpack_require__.p + "static/img/pic_chenjiangjiance.edfd255
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/img/btn_chenjiangjiance_sel.676720a.png";
+
+/***/ }),
+
+/***/ "McI6":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -4023,4 +4023,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAAcCAYAAABs
 /***/ })
 
 },["4HOz"]);
-//# sourceMappingURL=web-entry.edc5f7f062959f25736a.js.map
+//# sourceMappingURL=web-entry.a49a1123d15d656a1678.js.map
