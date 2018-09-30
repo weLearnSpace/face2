@@ -30,7 +30,7 @@
           <div class="page-top__menus_item" :class="{'active': page === 6.1}" @click="handleSwitch(6.1)">平台架构</div>
           <div class="page-top__menus_item" :class="{'active': page === 6.2}" @click="handleSwitch(6.2)">服务应用架构</div>
           <!-- <div class="page-top__menus_item" :class="{'active': page === 7}" @click="handleSwitch(7)">合作伙伴</div> -->
-          <div class="page-top__menus_item" :class="{'active': page === 8}" @click="handleSwitch(8)">联系我们</div>
+          <div class="page-top__menus_item" :class="{'active': page === 7}" @click="handleSwitch(7)">联系我们</div>
         </div>
       </div>
     </div>
@@ -198,7 +198,7 @@ const down = {
 }
 
 const pages = [
-  1, 2, 3, 4, 5, 5.1, 5.2, 5.3, 5.4, 6, 6.1, 6.2, 7, 8
+  1, 2, 3, 4, 5, 5.1, 5.2, 5.3, 5.4, 6, 6.1, 6.2, 7
 ]
 
 @Component({
@@ -294,11 +294,11 @@ export default class App extends Vue {
   get isProGY() {
     return this.page === 5.4
   }
-  get isPartner() {
-    return this.page === 7
-  }
+  // get isPartner() {
+  //   return this.page === 7
+  // }
   get isContact() {
-    return this.page === 8
+    return this.page === 7
   }
   get isPtys() {
     return this.page === 6

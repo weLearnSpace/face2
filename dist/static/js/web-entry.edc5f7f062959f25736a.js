@@ -2511,7 +2511,7 @@ var web_down = {
     enter: 'pt-page-moveFromTop',
     leave: 'pt-page-moveToBottomEasing pt-page-ontop'
 };
-var pages = [1, 2, 3, 4, 5, 5.1, 5.2, 5.3, 5.4, 6, 6.1, 6.2, 7, 8];
+var pages = [1, 2, 3, 4, 5, 5.1, 5.2, 5.3, 5.4, 6, 6.1, 6.2, 7];
 var selectortype_script_index_0_src_views_web_App = function (_super) {
     web___extends(App, _super);
     function App() {
@@ -2626,16 +2626,9 @@ var selectortype_script_index_0_src_views_web_App = function (_super) {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(App.prototype, "isPartner", {
-        get: function get() {
-            return this.page === 7;
-        },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(App.prototype, "isContact", {
         get: function get() {
-            return this.page === 8;
+            return this.page === 7;
         },
         enumerable: true,
         configurable: true
@@ -2739,8 +2732,8 @@ var selectortype_script_index_0_src_views_web_App = function (_super) {
     return App;
 }(vue_property_decorator["c" /* Vue */]);
 /* harmony default export */ var web = (selectortype_script_index_0_src_views_web_App);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-20a99c31","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/views/web/index.vue
-var web_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"page-outer"},[_c('div',{staticClass:"page-top__outer"},[_c('div',{staticClass:"page-top"},[_c('div',{staticClass:"page-top__logo",class:{'active': _vm.page === 1},on:{"click":function($event){_vm.handleSwitch(1)}}},[_c('img',{attrs:{"src":__webpack_require__("I6Tp"),"height":"48"}})]),_vm._v(" "),_c('div',{staticClass:"page-top__menus"},[_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 2},on:{"click":function($event){_vm.handleSwitch(2)}}},[_vm._v("关于我们")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 3},on:{"click":function($event){_vm.handleSwitch(3)}}},[_vm._v("服务范围")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 4},on:{"click":function($event){_vm.handleSwitch(4)}}},[_vm._v("覆盖领域")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 5 || _vm.page === 5.1 || _vm.page === 5.2 || _vm.page === 5.3 || _vm.page === 5.4}},[_c('span',[_vm._v("产品展示")]),_vm._v(" "),_c('div',{staticClass:"dropmenu"},[_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5)}}},[_vm._v("车载智能终端")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.1)}}},[_vm._v("消费类电子")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.2)}}},[_vm._v("智能家具")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.3)}}},[_vm._v("智能医学")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.4)}}},[_vm._v("智能工业")])])]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 6},on:{"click":function($event){_vm.handleSwitch(6)}}},[_vm._v("平台优势")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 6.1},on:{"click":function($event){_vm.handleSwitch(6.1)}}},[_vm._v("平台架构")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 6.2},on:{"click":function($event){_vm.handleSwitch(6.2)}}},[_vm._v("服务应用架构")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 8},on:{"click":function($event){_vm.handleSwitch(8)}}},[_vm._v("联系我们")])])])]),_vm._v(" "),_c('div',{staticClass:"bg",class:[_vm.curPageClass, {
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4cf1c304","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/views/web/index.vue
+var web_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"page-outer"},[_c('div',{staticClass:"page-top__outer"},[_c('div',{staticClass:"page-top"},[_c('div',{staticClass:"page-top__logo",class:{'active': _vm.page === 1},on:{"click":function($event){_vm.handleSwitch(1)}}},[_c('img',{attrs:{"src":__webpack_require__("I6Tp"),"height":"48"}})]),_vm._v(" "),_c('div',{staticClass:"page-top__menus"},[_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 2},on:{"click":function($event){_vm.handleSwitch(2)}}},[_vm._v("关于我们")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 3},on:{"click":function($event){_vm.handleSwitch(3)}}},[_vm._v("服务范围")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 4},on:{"click":function($event){_vm.handleSwitch(4)}}},[_vm._v("覆盖领域")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 5 || _vm.page === 5.1 || _vm.page === 5.2 || _vm.page === 5.3 || _vm.page === 5.4}},[_c('span',[_vm._v("产品展示")]),_vm._v(" "),_c('div',{staticClass:"dropmenu"},[_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5)}}},[_vm._v("车载智能终端")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.1)}}},[_vm._v("消费类电子")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.2)}}},[_vm._v("智能家具")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.3)}}},[_vm._v("智能医学")]),_vm._v(" "),_c('div',{staticClass:"dropmenu__item",on:{"click":function($event){_vm.handleSwitch(5.4)}}},[_vm._v("智能工业")])])]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 6},on:{"click":function($event){_vm.handleSwitch(6)}}},[_vm._v("平台优势")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 6.1},on:{"click":function($event){_vm.handleSwitch(6.1)}}},[_vm._v("平台架构")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 6.2},on:{"click":function($event){_vm.handleSwitch(6.2)}}},[_vm._v("服务应用架构")]),_vm._v(" "),_c('div',{staticClass:"page-top__menus_item",class:{'active': _vm.page === 7},on:{"click":function($event){_vm.handleSwitch(7)}}},[_vm._v("联系我们")])])])]),_vm._v(" "),_c('div',{staticClass:"bg",class:[_vm.curPageClass, {
       'bg-pros': _vm.isProBg,
       'bg-earth': _vm.isEarthBg,
     }]},[_c('div',{staticClass:"earth"}),_vm._v(" "),_vm._m(0)]),_vm._v(" "),_c('div',{staticClass:"page-inner"},[_c('div',{staticClass:"pt-perspective"},[_c('transition-group',{attrs:{"enter-active-class":("animated " + _vm.pageEnterAnimate),"leave-active-class":("animated " + _vm.pageLeaveAnimate)},on:{"before-enter":_vm.onBeforeEnter,"after-enter":_vm.onAfterEnter}},[_c('page-home',{directives:[{name:"show",rawName:"v-show",value:(_vm.isHome),expression:"isHome"}],key:"home",attrs:{"visible":_vm.isHome,"isPageEntered":_vm.isHome && _vm.isPageEntered,"loading":_vm.loading}}),_vm._v(" "),_c('page-us',{directives:[{name:"show",rawName:"v-show",value:(_vm.isUs),expression:"isUs"}],key:"us",attrs:{"visible":_vm.isUs,"isPageEntered":_vm.isUs && _vm.isPageEntered}}),_vm._v(" "),_c('page-serv',{directives:[{name:"show",rawName:"v-show",value:(_vm.isServ),expression:"isServ"}],key:"serv",attrs:{"visible":_vm.isServ,"isPageEntered":_vm.isServ && _vm.isPageEntered}}),_vm._v(" "),_c('page-pro',{directives:[{name:"show",rawName:"v-show",value:(_vm.isPro),expression:"isPro"}],key:"pro",attrs:{"visible":_vm.isPro,"isPageEntered":_vm.isPro && _vm.isPageEntered}}),_vm._v(" "),_c('PageProDz',{directives:[{name:"show",rawName:"v-show",value:(_vm.isProDZ),expression:"isProDZ"}],key:"pro-dianzi",attrs:{"visible":_vm.isProDZ,"isPageEntered":_vm.isProDZ && _vm.isPageEntered}}),_vm._v(" "),_c('PageProJj',{directives:[{name:"show",rawName:"v-show",value:(_vm.isProJJ),expression:"isProJJ"}],key:"pro-jiaju",attrs:{"visible":_vm.isProJJ,"isPageEntered":_vm.isProJJ && _vm.isPageEntered}}),_vm._v(" "),_c('PageProYx',{directives:[{name:"show",rawName:"v-show",value:(_vm.isProYX),expression:"isProYX"}],key:"pro-yixve",attrs:{"visible":_vm.isProYX,"isPageEntered":_vm.isProYX && _vm.isPageEntered}}),_vm._v(" "),_c('PageProGy',{directives:[{name:"show",rawName:"v-show",value:(_vm.isProGY),expression:"isProGY"}],key:"pro-gongye",attrs:{"visible":_vm.isProGY,"isPageEntered":_vm.isProGY && _vm.isPageEntered}}),_vm._v(" "),_c('page-range',{directives:[{name:"show",rawName:"v-show",value:(_vm.isRange),expression:"isRange"}],key:"range",attrs:{"visible":_vm.isRange,"isPageEntered":_vm.isRange && _vm.isPageEntered}}),_vm._v(" "),_c('Ptys',{directives:[{name:"show",rawName:"v-show",value:(_vm.isPtys),expression:"isPtys"}],key:"pro-Ptys",attrs:{"visible":_vm.isPtys,"isPageEntered":_vm.isPtys && _vm.isPageEntered}}),_vm._v(" "),_c('Ptjg',{directives:[{name:"show",rawName:"v-show",value:(_vm.isPtjg),expression:"isPtjg"}],key:"pro-Ptjg",attrs:{"visible":_vm.isPtjg,"isPageEntered":_vm.isPtjg && _vm.isPageEntered}}),_vm._v(" "),_c('Fwyy',{directives:[{name:"show",rawName:"v-show",value:(_vm.isFwyy),expression:"isFwyy"}],key:"pro-Fwyy",attrs:{"visible":_vm.isFwyy,"isPageEntered":_vm.isFwyy && _vm.isPageEntered}}),_vm._v(" "),_c('page-partner',{directives:[{name:"show",rawName:"v-show",value:(_vm.isPartner),expression:"isPartner"}],key:"partner",attrs:{"visible":_vm.isPartner,"isPageEntered":_vm.isPartner && _vm.isPageEntered}}),_vm._v(" "),_c('page-contact',{directives:[{name:"show",rawName:"v-show",value:(_vm.isContact),expression:"isContact"}],key:"contact",attrs:{"visible":_vm.isContact,"isPageEntered":_vm.isContact && _vm.isPageEntered}})],1)],1)])])}
@@ -2749,7 +2742,7 @@ var web_esExports = { render: web_render, staticRenderFns: web_staticRenderFns }
 /* harmony default export */ var views_web = (web_esExports);
 // CONCATENATED MODULE: ./src/views/web/index.vue
 function web_injectStyle (ssrContext) {
-  __webpack_require__("Vcun")
+  __webpack_require__("rSal")
 }
 var web_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -3420,13 +3413,6 @@ webpackContext.id = "VQMv";
 
 /***/ }),
 
-/***/ "Vcun":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "VdpG":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3945,6 +3931,13 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATUAAAAYCAYAAACb
 
 /***/ }),
 
+/***/ "rSal":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "sTAN":
 /***/ (function(module, exports) {
 
@@ -4030,4 +4023,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAAcCAYAAABs
 /***/ })
 
 },["4HOz"]);
-//# sourceMappingURL=web-entry.1e7a90e528c4696f5f52.js.map
+//# sourceMappingURL=web-entry.edc5f7f062959f25736a.js.map
