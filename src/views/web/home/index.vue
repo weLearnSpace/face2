@@ -92,7 +92,7 @@ $h: 800px;
 
 .logo-light {
   position: absolute;
-  top: 306px;
+  top: 300px;
   left: 386px;
   opacity: 0;
 

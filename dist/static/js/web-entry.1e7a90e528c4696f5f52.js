@@ -632,7 +632,7 @@ var home_Home = function (_super) {
     return Home;
 }(vue_property_decorator["c" /* Vue */]);
 /* harmony default export */ var home = (home_Home);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2a7d8bfa","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/views/web/home/index.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1153847d","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/views/web/home/index.vue
 var home_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pt-page page-home",class:{
     'pt-page-current': _vm.visible,
     'page-entered': _vm.isPageEntered
@@ -644,7 +644,7 @@ var home_esExports = { render: home_render, staticRenderFns: home_staticRenderFn
 /* harmony default export */ var web_home = (home_esExports);
 // CONCATENATED MODULE: ./src/views/web/home/index.vue
 function home_injectStyle (ssrContext) {
-  __webpack_require__("U2Fn")
+  __webpack_require__("PksC")
 }
 var home_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -3218,6 +3218,13 @@ module.exports = __webpack_require__.p + "static/img/btn_ETC_sel.9736241.png";
 
 /***/ }),
 
+/***/ "PksC":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "PrRj":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3271,13 +3278,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAuCAYAAABd
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/img/bg_light_zhinengtingzhenqi.2bcae0e.png";
-
-/***/ }),
-
-/***/ "U2Fn":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -4030,4 +4030,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAAcCAYAAABs
 /***/ })
 
 },["4HOz"]);
-//# sourceMappingURL=web-entry.2240a52fdc79e750687c.js.map
+//# sourceMappingURL=web-entry.1e7a90e528c4696f5f52.js.map
