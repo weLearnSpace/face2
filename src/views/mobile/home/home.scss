@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, #app, .mobile {
+    height: 100%;
+}
 .home {
     width: 960px;
     background: #fff;
