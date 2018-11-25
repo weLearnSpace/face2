@@ -51,7 +51,7 @@ const build = {
   // Template for index.html
   index: {
     web: path.resolve(__dirname, '../dist/index-web.html'),
-    mobile: path.resolve(__dirname, '../dist/mobile/index.html'),
+    mobile: path.resolve(__dirname, '../dist/mobile/index-mobile.html'),
   },
 
   // Paths
